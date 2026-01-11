@@ -1,6 +1,9 @@
--- ESP PRO v3 MAIN
+-- ESP PRO v3 MAIN TEST
 
-print("ESP PRO v3 Loaded Successfully")
+warn("ESP PRO v3 MAIN LOADED")
 
--- ตัวอย่างโค้ด
--- ใส่ ESP / GUI / ฟังก์ชันจริงของคุณตรงนี้
+game.StarterGui:SetCore("SendNotification", {
+    Title = "ESP PRO v3",
+    Text = "Main.lua Loaded Successfully",
+    Duration = 5
+})
