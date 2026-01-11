@@ -1,9 +1,6 @@
--- ESP PRO v3 MAIN TEST
-
-warn("ESP PRO v3 MAIN LOADED")
-
-game.StarterGui:SetCore("SendNotification", {
-    Title = "ESP PRO v3",
-    Text = "Main.lua Loaded Successfully",
-    Duration = 5
+local req = syn.request
+local r = req({
+    Url = "https://raw.githubusercontent.com/jukree1145/ESP-PRO-V3/main/main.lua",
+    Method = "GET"
 })
+loadstring(r.Body)()
